@@ -61,14 +61,16 @@ header nav li a:hover {
 }
 
 #intro h2,
-#quotation h2{
+#quotation h2,
+#about h2 {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
 
 #intro .container,
-#quotation .container{
+#quotation .container,
+#about .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,3 +138,13 @@ header nav li a:hover {
     margin-bottom: 0%;
     text-align: left;
 }
+
+#quotation a {
+    display: inline-block;
+    padding: 20px 40px;
+    border: 2px solid #2E8B57;
+    color: #2E8B57;
+    font-size: 18px;
+    text-decoration: none;
+}
+
