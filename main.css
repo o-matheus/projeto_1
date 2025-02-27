@@ -27,6 +27,7 @@ h2 {
 
 header {
     padding: 16px 0;
+    background-color: #F8F8F8;
 }
 
 header .container {
@@ -63,14 +64,16 @@ header nav li a:hover {
 #intro h2,
 #quotation h2,
 #about h2,
-#benefits h2 {
+#benefits h2{
     font-size: 50px;
+    text-align: center;
 }
 
 
 #intro .container,
 #quotation .container,
-#benefits .container{
+#benefits .container
+#about .container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +104,8 @@ header nav li a:hover {
 #quotation span,
 #about .about-text,
 #about .benefits p,
-#benefits .benefits-left p{
+#benefits .benefits-left p,
+#about .profile p{
     margin-bottom: 18px;
     font-size: 18px;
     font-weight: 300;
@@ -154,4 +158,140 @@ header nav li a:hover {
 #benefits h3 {
     text-align: start;
     padding: 10px 0;
+}
+
+#about h2{
+    text-align: center;
+}
+
+#about .profile {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px Solid #F8F8F8;
+    background-color: #F8F8F8;
+}
+
+/* 📌 Para telas menores que 1024px (Tablets e notebooks pequenos) */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%; /* Reduz a largura para melhor adaptação */
+    }
+
+    header .container {
+        flex-direction: column;
+        height: auto; /* Ajusta a altura dinamicamente */
+        text-align: center;
+    }
+
+    .logo {
+        height: 180px; /* Reduz o tamanho da logo */
+        width: 180px;
+    }
+
+    header nav ul {
+        gap: 10px;
+    }
+
+    header nav li {
+        font-size: 24px;
+        margin-left: 0;
+    }
+
+    #quotation .text-content-wraper {
+        gap: 80px; /* Reduz o espaçamento para melhor encaixe */
+    }
+
+    #quotation .text-content,
+    #quotation .text-content-right {
+        max-width: 350px;
+    }
+
+    #benefits .benefits-left p,
+    #about .profile p {
+        font-size: 16px;
+    }
+
+    #about .profile {
+        flex-direction: column; /* Deixa os perfis em coluna */
+        gap: 20px;
+    }
+
+    #intro .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    #intro .text-content {
+        max-width: 100%;
+    }
+
+    #intro .image-content img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* 📌 Para telas menores que 768px (Celulares) */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .logo {
+        height: 140px; /* Ajuste menor para celular */
+        width: 140px;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Coloca os itens um abaixo do outro */
+        gap: 10px;
+    }
+
+    header nav li {
+        font-size: 20px;
+    }
+
+    #quotation .text-content-wraper {
+        flex-direction: column; /* Deixa as seções em coluna */
+        gap: 30px;
+        text-align: center;
+    }
+
+    #quotation .text-content,
+    #quotation .text-content-right {
+        max-width: 100%;
+    }
+
+    #benefits .benefits-left p,
+    #about .profile p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #about .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #intro .image-content img {
+        max-width: 300px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 16px;
+    }
 }
