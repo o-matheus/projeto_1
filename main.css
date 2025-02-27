@@ -94,7 +94,9 @@ header nav li a:hover {
 }
 
 
-#intro .text{
+#intro .text,
+#quotation .text,
+#quotation span{
     margin-bottom: 18px;
     font-size: 18px;
     font-weight: 300;
@@ -107,7 +109,30 @@ header nav li a:hover {
     max-height: 450px;
 }
 
+#quotation .text-content-wraper{
+    display: flex;
+    gap: 300px;
+}
+
 #quotation .text-content{
     display: flex;
-    max-width: 500px;
+    max-width: 400px;
+    max-height: 380px;
+}
+
+#quotation .text-content-right{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    max-height: 380px;
+}
+
+#quotation .text-content-right .text{
+    margin-bottom: 64px;
+}
+
+#quotation span {
+    display: block;
+    margin-bottom: 0%;
+    text-align: left;
 }
