@@ -64,13 +64,11 @@ header nav li a:hover {
 #quotation h2,
 #about h2 {
     font-size: 50px;
-    margin-bottom: 30px;
 }
 
 
 #intro .container,
-#quotation .container,
-#about .container {
+#quotation .container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +96,9 @@ header nav li a:hover {
 
 #intro .text,
 #quotation .text,
-#quotation span{
+#quotation span,
+#about .about-text,
+#about .benefits p{
     margin-bottom: 18px;
     font-size: 18px;
     font-weight: 300;
@@ -148,3 +148,66 @@ header nav li a:hover {
     text-decoration: none;
 }
 
+#about {
+    padding: 40px 0;
+}
+
+#about .container {
+    max-width: 1100px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 40px; 
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-left {
+    flex: 1; 
+    max-width: 550px;
+}
+
+.about-right {
+    flex: 1;
+    max-width: 650px;
+    border-radius: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 120px; 
+    height: 120px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.profile-text {
+    flex: 1; 
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.address {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media img {
+    width: 30px;
+    margin: 0 10px;
+}
